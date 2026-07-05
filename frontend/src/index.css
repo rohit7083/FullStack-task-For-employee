@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display;
+}
+
+/* Focus visibility for accessibility */
+:focus-visible {
+  outline: 2px solid #2c5ff6;
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd2da;
+  border-radius: 999px;
+}
